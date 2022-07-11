@@ -39,7 +39,8 @@ def record_audio():
 
 
 def upload_file(file_path):
-    url = 'http://localhost:3000/api/checkAudio'
+    # url = 'http://localhost:3000/api/checkAudio'
+    url = 'https://alertix.herokuapp.com/api/checkAudio'
     try:
         with open(file_path, "rb") as a_file:
             file_dict = {"file": a_file}
